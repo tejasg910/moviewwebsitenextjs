@@ -1,0 +1,55 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+  max-width: 100vw;
+  background-color: rgb(237, 240, 244);
+}
+.navbar .link {
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+.homeLink {
+}
+
+.active {
+  color: rgb(31, 236, 236);
+}
+
+.sidebarButton {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  background-color: white;
+  height: 100vh;
+  transform: translate(-100%);
+  transition: all 0.5s;
+}
+.sidebar li {
+  padding: 10px;
+  list-style: none;
+}
+.showsidebar {
+  transform: translate(0);
+}
+@media screen and (max-width: 400px) {
+  .link {
+    display: none;
+  }
+  .sidebarButton {
+    display: block;
+  }
+}
